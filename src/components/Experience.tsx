@@ -14,7 +14,7 @@ interface ExperienceItem {
 
 const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
-    {
+    /*{
       id: 1,
       title: 'Senior Full Stack Developer',
       company: 'TechCorp Solutions',
@@ -56,20 +56,23 @@ const Experience: React.FC = () => {
         'Contributed to open-source projects and company tech blog'
       ],
       technologies: ['Vue.js', 'JavaScript', 'CSS3', 'Webpack', 'Firebase']
-    },
+    },*/
     {
       id: 4,
       title: 'Junior Web Developer',
-      company: 'Web Agency Pro',
-      location: 'Boston, MA',
-      period: '2018 - 2019',
+      Institution: 'Uncommon ',
+      location: 'Harare',
+      period: 'February 2025-Present',
       description: [
-        'Built custom WordPress themes and plugins for clients',
-        'Optimized websites for SEO and performance',
+        'UI/UX design using figma',
+        'Building programs with python programming language',
         'Maintained and updated existing client websites',
-        'Learned modern development practices and workflows'
+        'Building front-end web apps',
+        'Creating responsive websites',
+        'Create Database schemas',
+        'Using REST API to communicate and edit the back-end ',
       ],
-      technologies: ['WordPress', 'PHP', 'jQuery', 'MySQL', 'HTML5', 'CSS3']
+      technologies: ['HTML5', 'CSS', 'JavaScript', 'React', 'Python', 'Node.js', 'Express.js', 'PostgreSQL', 'REST API']
     }
   ];
 

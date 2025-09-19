@@ -42,10 +42,10 @@ const Hero: React.FC = () => {
       
       <div className="max-w-4xl w-full px-4 sm:px-6 lg:px-8 text-left relative z-10">
         <div className="mb-8 animate-fadeInUp flex justify-start">
-          <div className="w-32 h-32 mb-6 relative">
-            <div className="w-full h-full bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white text-4xl font-bold animate-pulse">
+          <div className="w-32 h-32 mb-6 relative" style={{ margin: '0 auto' }}>
+            {/*<div className="w-full h-full bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white text-4xl font-bold animate-pulse">
               CMN
-            </div>
+            </div>*/}
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full animate-ping opacity-20"></div>
           </div>
         </div>
@@ -99,7 +99,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-8 animate-bounce">
+      <div className="absolute bottom-8 left-8 animate-bounce" style={{ left: '50%', transform: 'translateX(-50%)' }}>
         <ChevronDown size={32} className="text-gray-400" />
       </div>
     </section>

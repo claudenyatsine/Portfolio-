@@ -14,7 +14,7 @@ function App() {
     document.documentElement.style.scrollBehavior = 'smooth';
     
     // Update page title
-    document.title = 'John Doe - Full Stack Developer';
+    document.title = 'Claude Nyatsine - Full Stack Developer';
     
     return () => {
       document.documentElement.style.scrollBehavior = 'auto';
