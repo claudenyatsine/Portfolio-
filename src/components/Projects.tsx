@@ -1,6 +1,7 @@
 import React from 'react';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import malariaDashboard from '../assets/images/malaria-dashboard.png';
+import superfert from '../assets/images/superfert.png';
 
 interface Project {
   id: number;
@@ -31,8 +32,8 @@ const Projects: React.FC = () => {
       id: 2,
       title: 'SuperFert App',
       description: 'This is a project to showcase the z-index css properties in a real-world application.',
-      longDescription: 'A comprehensive task management application with real-time collaboration features, drag-and-drop functionality, and team workspace management.',
-      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
+      longDescription: 'This project demonstrates the practical application of CSS z-index properties in building layered user interfaces, creating depth and interactivity in web applications.',
+      image: superfert,
       tags: ['React'],
       liveUrl: 'https://vercel.com/nyatsinec-5166s-projects/super-fert-app',
       githubUrl: 'https://github.com/claudenyatsine/super-fert-app',
@@ -40,11 +41,11 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather app with detailed forecasts and location search',
-      longDescription: 'An elegant weather dashboard providing detailed forecasts, weather maps, and location-based weather information with a clean, responsive design.',
+      title: 'Learning Management System',
+      description: 'A comprehensive learning management system for online education and course management.',
+      longDescription: 'A robust platform for educators and students to manage courses, assignments, and learning materials with modern UI and responsive design.',
       image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['React', 'Weather API', 'Chart.js', 'CSS3'],
+      tags: ['React', 'Node.js', 'MongoDB', 'Express'],
       liveUrl: '#',
       githubUrl: '#',
       featured: false,
@@ -85,7 +86,6 @@ const Projects: React.FC = () => {
   ];
 
   const featuredProjects = projects.filter(p => p.featured);
-  const otherProjects = projects.filter(p => !p.featured);
 
   return (
     <section id="projects" className="py-20 bg-gray-900">
@@ -160,7 +160,7 @@ const Projects: React.FC = () => {
           ))}
         </div>
 
-        {/* Other Projects Grid */}
+        {/* Other Projects Grid 
         <div>
           <h3 className="text-2xl lg:text-3xl font-bold text-white text-center mb-12">
             Other Projects
@@ -215,7 +215,7 @@ const Projects: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div>*/}
       </div>
     </section>
   );

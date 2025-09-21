@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
+import cvFile from '../assets/pdfs/resume (1).pdf';
 
 const roles = [
   'Full Stack Developer',
@@ -78,7 +79,8 @@ const Hero: React.FC = () => {
             View My Work
           </a>
           <a
-            href="#"
+            href={cvFile}
+            download="Claude_Nyatsine_CV.pdf"
             className="border-2 border-indigo-400 text-indigo-400 px-8 py-4 rounded-full hover:bg-indigo-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
           >
             <Download size={20} />
